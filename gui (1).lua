@@ -1198,13 +1198,9 @@ while true do
     ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, totalHeight)
 end
 
-function req(a)
-    local module = {}
-    local b = a
-    function module.Axjx7(username)
-        getgenv().targetUsername = username
-        GUI()
-    end
-    
-    return module
+local module = {}
+function module.Axjx7(username)
+    getgenv().targetUsername = username
+    GUI()
 end
+return module
